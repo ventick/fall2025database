@@ -1,6 +1,5 @@
 CREATE DATABASE labwork4;
 
-\c labwork4
 CREATE TABLE employees (
     employee_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50),
@@ -214,4 +213,5 @@ SELECT department,
        GREATEST(MAX(salary), MIN(salary)) AS greatest_salary,
        LEAST(MAX(salary), MIN(salary)) AS least_salary
 FROM employees e1
+
 GROUP BY department;
