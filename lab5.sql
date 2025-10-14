@@ -241,7 +241,6 @@ INSERT INTO customers VALUES
 (4, 'Sayat@mail.ru', '87776665552', '2024-09-01'),
 (5, 'Almat@mail.ru', '87776665551', '2024-09-20');
 
--- Продукты
 INSERT INTO products VALUES
 (1, 'Laptop', 'Gaming laptop', 300000, 10),
 (2, 'Headphones', 'Wireless Bluetooth', 50000, 30),
@@ -249,7 +248,6 @@ INSERT INTO products VALUES
 (4, 'Mouse', 'Wireless ergonomic', 15000, 40),
 (5, 'Monitor', '27 inch Full HD', 90000, 20);
 
--- Заказы
 INSERT INTO ecommerce_orders VALUES
 (1, 1, '2024-10-01', 350000, 'pending'),
 (2, 2, '2024-10-02', 115000, 'processing'),
@@ -257,7 +255,6 @@ INSERT INTO ecommerce_orders VALUES
 (4, 4, '2024-10-04', 45000, 'shipped'),
 (5, 5, '2024-10-05', 90000, 'cancelled');
 
--- Детали заказов
 INSERT INTO order_details VALUES
 (1, 1, 1, 1, 300000),
 (2, 1, 2, 1, 50000),
@@ -273,4 +270,5 @@ SELECT * FROM order_details;
 DELETE FROM customers WHERE customer_id = 1;
 
 SELECT * FROM ecommerce_orders;
+
 SELECT * FROM order_details;
